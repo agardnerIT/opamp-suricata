@@ -2,6 +2,8 @@
 
 [![opamp-agent](https://img.shields.io/badge/built%20on-opamp--agent-blue)](https://github.com/agardnerIT/opamp-agent)
 
+![Warning: Entirely vibecoded](https://img.shields.io/badge/Warning-Entirely%20vibecoded-orange?style=for-the-badge)
+
 A complete, working **vendor-artifact reference**: the generic OpAMP bridge
 ([opamp-agent](https://github.com/agardnerIT/opamp-agent)) plus the one
 product-specific driver that teaches Suricata to be OpAMP-managed. Watch an
