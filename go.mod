@@ -2,7 +2,7 @@ module github.com/agardnerIT/opamp-suricata
 
 go 1.25.0
 
-require github.com/agardnerIT/opamp-agent v0.3.0
+require github.com/agardnerIT/opamp-agent v0.4.0
 
 require (
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
