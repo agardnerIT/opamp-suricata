@@ -16,6 +16,13 @@ rejection feedback when a rule is bad.
 > rather implement OpAMP natively inside your own agent, see
 > [opamp-agent's vendor note](https://github.com/agardnerIT/opamp-agent#are-you-a-vendor-trying-to-add-opamp-support-for-your-product) —
 > native is the better end state.
+>
+> Second reference implementation:
+> [**opamp-falco**](https://github.com/agardnerIT/opamp-falco) — the same
+> three-file shape for a product whose apply is an API call (`POST /reload`)
+> and whose verify is a server-side generation counter, rather than
+> Suricata's stats polling. Read them side by side to see which parts of a
+> driver are genuinely product-specific.
 
 ## What's here (three files)
 
