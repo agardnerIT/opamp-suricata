@@ -38,12 +38,23 @@ func (d SuricataDriver) Identity() driver.Identity {
 }
 
 // render: the remote config body IS the rules file content (PoC convention).
-func (d SuricataDriver) Render(cfg []byte) (driver.Rendered, error) {
-	if len(cfg) == 0 {
+// Single-file driver: the server pushes exactly one config object for this
+// agent (no suricata profile defines named objects), so Render accepts the
+// sole entry — under whatever key it came — and refuses a multi-object push
+// it has no contract for.
+func (d SuricataDriver) Render(cfg driver.Config) (driver.Rendered, error) {
+	if len(cfg) != 1 {
+		return driver.Rendered{}, fmt.Errorf("suricata driver manages one rules file; got %d config objects", len(cfg))
+	}
+	var body []byte
+	for _, b := range cfg {
+		body = b
+	}
+	if len(body) == 0 {
 		return driver.Rendered{}, fmt.Errorf("empty config body")
 	}
 	return driver.Rendered{Artifacts: []driver.Artifact{
-		{Path: d.RulesPath, Body: cfg},
+		{Path: d.RulesPath, Body: body},
 	}}, nil
 }
 
