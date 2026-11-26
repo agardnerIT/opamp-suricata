@@ -1,5 +1,5 @@
-github.com/agardnerIT/opamp-agent v0.1.0 h1:7eMD9yU9+84O4EGhM6FEydzM0yY4NZc0/IRh69c2/LA=
-github.com/agardnerIT/opamp-agent v0.1.0/go.mod h1:dDHGTddLjcC4P5ZmaOiWCE4ZMC5jYV5xGZSG04m9Y/Y=
+github.com/agardnerIT/opamp-agent v0.2.0 h1:XSaWlSAy3uX3js3iQJDl6YDypxPwYAKdbua34+9eYRs=
+github.com/agardnerIT/opamp-agent v0.2.0/go.mod h1:dDHGTddLjcC4P5ZmaOiWCE4ZMC5jYV5xGZSG04m9Y/Y=
 github.com/cenkalti/backoff/v4 v4.3.0 h1:MyRJ/UdXutAwSAT+s3wNd7MfTIcy71VQueUuFK343L8=
 github.com/cenkalti/backoff/v4 v4.3.0/go.mod h1:Y3VNntkOUPxTVeUxJ/G5vcM//AlwfmyYozVcomhLiZE=
 github.com/elastic/proxy-connect-dialer-go v0.1.1 h1:kmSFbqC+j6yVlxwPixI/7aTpdp+FH16Oaau1bcClpjI=
